@@ -20,7 +20,7 @@ List posts = [
     "postImg":
         "https://static.wikia.nocookie.net/john-wick8561/images/a/a9/Iosef_Tarasov.jpg/revision/latest?cb=20190404152724",
     "caption":
-        " ទឹកមុខនៅពេលយើងអត់ចង់ថតរូបនៅកន្លែងសួនផ្កា ហើយគេបង្ខំអោយយើងថត។ 😏😒",
+        "Today is such a day for us.",
     "isLoved": true,
     "commentCount": "10",
     "likedBy": "sonitakhoun",

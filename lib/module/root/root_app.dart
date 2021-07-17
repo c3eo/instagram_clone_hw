@@ -26,6 +26,7 @@ class _RootAppState extends State<RootApp> {
       ),
       body: RootBody(
         indexPage: indexPage,
+        context: context,
       ),
       bottomNavigationBar: RootBtnv(
         indexPage: indexPage,

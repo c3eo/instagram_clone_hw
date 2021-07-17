@@ -9,14 +9,14 @@ class RootAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   RootAppBar({required this.position,
       required this.onMessageClick,
-      required this.onCameraClick
+      required this.onCameraClick,
       });
 
   @override
   Widget build(BuildContext context) {
     List<AppBar> appBarItems = [
       _getHome,
-      _getSearch,
+      _getSearch(context),
       _getUpload,
       _getNotification,
       _getProfile
@@ -54,21 +54,24 @@ AppBar get _getHome {
   );
 }
 
-AppBar get _getSearch {
+AppBar _getSearch(BuildContext context) {
   return AppBar(
     backgroundColor: appBarColor,
-    title: TextField(
-      style: TextStyle(color: white),
-      decoration: InputDecoration(
-        hintText: 'Search',
-        contentPadding: EdgeInsets.symmetric(vertical: -10),
-        prefixIcon: Icon(
-          Icons.search,
-          color: grey,
-        ),
-        hintStyle: TextStyle(color: grey),
-        border: OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(18))),
+    title: Container(
+      width: MediaQuery.of(context).size.width - 30,
+      height: 45,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: textFieldBackground),
+      child: TextField(
+        decoration: InputDecoration(
+            border: InputBorder.none,
+            prefixIcon: Icon(
+              Icons.search,
+              color: white.withOpacity(0.3),
+            )),
+        style: TextStyle(color: white.withOpacity(0.3)),
+        cursorColor: white.withOpacity(0.3),
       ),
     ),
   );
