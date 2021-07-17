@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:instagram_clone_hw/constant/post_json.dart';
 import 'package:instagram_clone_hw/constant/story_json.dart';
 import 'package:instagram_clone_hw/theme/colors.dart';
-import 'package:instagram_clone_hw/widgets/post_item.dart';
-import 'package:instagram_clone_hw/widgets/story_item.dart';
+import 'package:instagram_clone_hw/module/root/widget/post_item.dart';
+import 'package:instagram_clone_hw/module/root/widget/story_item.dart';
 
 class RootBody extends StatelessWidget {
   final int indexPage;
