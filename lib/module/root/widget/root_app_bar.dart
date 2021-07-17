@@ -2,18 +2,33 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:instagram_clone_hw/theme/colors.dart';
 
-AppBar getAppBar(int position) {
-  if (position == 0) {
-    return _getHome;
-  } else if (position == 1) {
-    return _getSearch;
-  } else if (position == 2) {
-    return _getUpload;
-  } else if (position == 3) {
-    return _getNotification;
-  } else {
-    return _getProfile;
+class RootAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final int position;
+  final VoidCallback onMessageClick;
+  final VoidCallback onCameraClick;
+
+  RootAppBar({required this.position,
+      required this.onMessageClick,
+      required this.onCameraClick
+      });
+
+  @override
+  Widget build(BuildContext context) {
+    List<AppBar> appBarItems = [
+      _getHome,
+      _getSearch,
+      _getUpload,
+      _getNotification,
+      _getProfile
+    ];
+    return IndexedStack(
+      index: position,
+      children: appBarItems,
+    );
   }
+
+  @override
+  Size get preferredSize => AppBar().preferredSize;
 }
 
 AppBar get _getHome {
@@ -52,20 +67,27 @@ AppBar get _getSearch {
           color: grey,
         ),
         hintStyle: TextStyle(color: grey),
-        border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(18))),
+        border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(18))),
       ),
     ),
   );
 }
 
 AppBar get _getUpload {
-  return AppBar();
+  return AppBar(
+    backgroundColor: appBarColor,
+  );
 }
 
 AppBar get _getNotification {
-  return AppBar();
+  return AppBar(
+    backgroundColor: appBarColor,
+  );
 }
 
 AppBar get _getProfile {
-  return AppBar();
+  return AppBar(
+    backgroundColor: appBarColor,
+  );
 }

@@ -14,25 +14,25 @@ List stories = [
   {
     "id": 2,
     "img":
-        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "name": "babysweetiepie"
+        "https://static.wikia.nocookie.net/john-wick8561/images/1/12/Viggo_Tarasov.jpg/revision/latest?cb=20190404152551",
+    "name": "Viggo"
   },
   {
     "id": 3,
     "img":
-        "https://images.unsplash.com/photo-1545912452-8aea7e25a3d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "whereavygoes"
+        "https://static.wikia.nocookie.net/john-wick8561/images/a/a9/Iosef_Tarasov.jpg/revision/latest?cb=20190404152724",
+    "name": "Iosef"
   },
   {
     "id": 4,
     "img":
-        "https://images.unsplash.com/photo-1525879000488-bff3b1c387cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "collins_lesulie"
+        "https://static.wikia.nocookie.net/john-wick8561/images/5/51/Santino_D%27Antonio.jpg/revision/latest/top-crop/width/360/height/450?cb=20190728140341",
+    "name": "Santino"
   },
   {
     "id": 5,
     "img":
-        "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "name": "tyler_nix"
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fvillains.fandom.com%2Fwiki%2FThe_Adjudicator&psig=AOvVaw3QC2a_VxKGnLKYfnRxvOYy&ust=1626592273714000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKi3v8fG6fECFQAAAAAdAAAAABAI",
+    "name": "Adjudicator"
   }
 ];
