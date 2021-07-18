@@ -33,7 +33,7 @@ List posts = [
         "https://static.wikia.nocookie.net/john-wick8561/images/5/51/Santino_D%27Antonio.jpg/revision/latest/top-crop/width/360/height/450?cb=20190728140341",
     "postImg":
         "https://static.wikia.nocookie.net/john-wick8561/images/5/51/Santino_D%27Antonio.jpg/revision/latest/top-crop/width/360/height/450?cb=20190728140341",
-    "caption": " It is a good to day",
+    "caption": " It is a good today",
     "isLoved": false,
     "commentCount": "60",
     "likedBy": "babysweetiepie",

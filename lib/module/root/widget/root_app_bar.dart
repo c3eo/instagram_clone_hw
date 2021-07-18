@@ -66,11 +66,14 @@ AppBar _getSearch(BuildContext context) {
       child: TextField(
         decoration: InputDecoration(
             border: InputBorder.none,
+            hintText: "Search",
+            hintStyle: TextStyle(color: grey),
+
             prefixIcon: Icon(
               Icons.search,
               color: white.withOpacity(0.3),
             )),
-        style: TextStyle(color: white.withOpacity(0.3)),
+        style: TextStyle(color: white),
         cursorColor: white.withOpacity(0.3),
       ),
     ),
