@@ -51,7 +51,9 @@ class StoryItem extends StatelessWidget {
               name,
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(color: white,),
+              style: TextStyle(
+                color: white,
+              ),
             ),
           )
         ],

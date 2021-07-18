@@ -7,10 +7,11 @@ class RootAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onMessageClick;
   final VoidCallback onCameraClick;
 
-  RootAppBar({required this.position,
-      required this.onMessageClick,
-      required this.onCameraClick,
-      });
+  RootAppBar({
+    required this.position,
+    required this.onMessageClick,
+    required this.onCameraClick,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -61,8 +62,7 @@ AppBar _getSearch(BuildContext context) {
       width: MediaQuery.of(context).size.width - 30,
       height: 45,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: textFieldBackground),
+          borderRadius: BorderRadius.circular(10), color: textFieldBackground),
       child: TextField(
         decoration: InputDecoration(
             border: InputBorder.none,

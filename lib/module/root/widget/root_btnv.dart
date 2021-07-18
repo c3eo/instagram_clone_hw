@@ -32,12 +32,10 @@ class RootBtnv extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 80,
-      decoration: BoxDecoration(
-          color: appFooterColor
-      ),
+      decoration: BoxDecoration(color: appFooterColor),
       child: Padding(
-        padding: const EdgeInsets.only(
-            left: 20, right: 20, bottom: 20, top: 15),
+        padding:
+            const EdgeInsets.only(left: 20, right: 20, bottom: 20, top: 15),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(items.length, (index) {
@@ -45,8 +43,8 @@ class RootBtnv extends StatelessWidget {
               onTap: () {
                 onIndexPageChange(index);
               },
-              child: SvgPicture.asset(
-                  items[index], width: 24),);
+              child: SvgPicture.asset(items[index], width: 24),
+            );
           }),
         ),
       ),
