@@ -35,6 +35,7 @@ class RootBody extends StatelessWidget {
         children: <Widget>[
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
+            padding: EdgeInsets.only(top: 20),
             child: Row(
               children: <Widget>[
                 Padding(
