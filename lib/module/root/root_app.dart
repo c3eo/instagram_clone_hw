@@ -21,8 +21,6 @@ class _RootAppState extends State<RootApp> {
       backgroundColor: black,
       appBar: RootAppBar(
         position: indexPage,
-        onCameraClick: () => {},
-        onMessageClick: () => {},
       ),
       body: RootBody(
         indexPage: indexPage,

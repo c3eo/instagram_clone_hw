@@ -4,13 +4,9 @@ import 'package:instagram_clone_hw/theme/colors.dart';
 
 class RootAppBar extends StatelessWidget implements PreferredSizeWidget {
   final int position;
-  final VoidCallback onMessageClick;
-  final VoidCallback onCameraClick;
 
   RootAppBar({
     required this.position,
-    required this.onMessageClick,
-    required this.onCameraClick,
   });
 
   @override
